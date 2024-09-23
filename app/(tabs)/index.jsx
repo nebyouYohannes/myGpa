@@ -4,11 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import * as SQLite from 'expo-sqlite';
 
 
-export default function HomeScreen() {
+export default  function HomeScreen() {
 
   const [modalVisible, setModalVisible] = useState(false);
+  const [courses, setCourses] = useState([]);
 
-  const db = SQLite.openDatabaseAsync('CourseDb.db');
+  
   
 
   return (
@@ -78,6 +79,7 @@ export default function HomeScreen() {
           </View>
         </View>
       </Modal>
+      
       
 
     </View>
